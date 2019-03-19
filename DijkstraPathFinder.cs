@@ -12,13 +12,14 @@ namespace Greedy
     {
         public IEnumerable<PathWithCost> GetPathsByDijkstra(State state, Point start, IEnumerable<Point> targets)
         {
+            var points = new List<Point>(targets);
             if(targets == null || !targets.Any()) yield break;
             var frontier = new Queue<Point>();
             frontier.Enqueue(start);
             var cameFrom = new Dictionary<Point, PathWithCost> {[start] = new PathWithCost(0, start)};
             var costSoFar = new Dictionary<Point, int> {[start] = 0};
 
-            while (frontier.Any())
+            while (frontier.Any() && points.Any())
             {
                 var current = frontier.Dequeue();
 
@@ -33,12 +34,9 @@ namespace Greedy
                     var paths = new List<Point>(cameFrom[current].Path){next};
                     cameFrom[next] = new PathWithCost(newCost, paths.ToArray());
                 }
-            }
-
-            foreach (var target in targets)
-            {
-                if (!cameFrom.ContainsKey(target)) continue;
-                yield return cameFrom[target];   
+                if (!targets.Contains(current)) continue;
+                yield return cameFrom[current];
+                points.Remove(current);
             }
         }
         
