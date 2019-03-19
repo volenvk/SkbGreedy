@@ -12,8 +12,8 @@ namespace Greedy
     {
         public IEnumerable<PathWithCost> GetPathsByDijkstra(State state, Point start, IEnumerable<Point> targets)
         {
-            var points = new List<Point>(targets);
-            if(targets == null || !targets.Any()) yield break;
+            var points = new Queue<Point>(targets);
+            if(!points.Any()) yield break;
             var frontier = new Queue<Point>();
             frontier.Enqueue(start);
             var cameFrom = new Dictionary<Point, PathWithCost> {[start] = new PathWithCost(0, start)};
@@ -22,7 +22,6 @@ namespace Greedy
             while (frontier.Any() && points.Any())
             {
                 var current = frontier.Dequeue();
-
                 foreach (Point next in Nodes(current))
                 {
                     if (!state.InsideMap(next)) continue;
@@ -34,26 +33,26 @@ namespace Greedy
                     var paths = new List<Point>(cameFrom[current].Path){next};
                     cameFrom[next] = new PathWithCost(newCost, paths.ToArray());
                 }
-                if (!targets.Contains(current)) continue;
+                if (!points.Peek().Equals(current)) continue;
                 yield return cameFrom[current];
-                points.Remove(current);
+                points.Dequeue();
             }
         }
         
         private IEnumerable<Point> Nodes(Point point)
         {
             for (var dy = -1; dy <= 1; dy++)
-            for (var dx = -1; dx <= 1; dx++)
-                if (dx != 0 && dy != 0)
-                    continue;
-                else
-                {
-                    yield return new Point
+                for (var dx = -1; dx <= 1; dx++)
+                    if (dx != 0 && dy != 0)
+                        continue;
+                    else
                     {
-                        X = point.X + dx,
-                        Y = point.Y + dy
-                    };
-                }
+                        yield return new Point
+                        {
+                            X = point.X + dx,
+                            Y = point.Y + dy
+                        };
+                    }
         }
     }
 }
