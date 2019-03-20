@@ -261,7 +261,7 @@ position
                 var controller = TestsHelper.MoveThroughPath(true, state, path.Path.Skip(1).ToList());
                 var position = controller.State.Position;
                 Assert.True(costs.ContainsKey(position), $"{position}, not in " + string.Join("", costs));
-                Assert.AreEqual(costs[position], path.Cost);
+                Assert.AreEqual(costs[position], path.Cost, $"{costs[position]} not equal {path.Cost}");
                 Assert.AreEqual(costs[position], energy - controller.State.Energy);
                 Assert.True(previousCost <= path.Cost, $"{previousCost} not little {path.Cost}");
                 previousCost = path.Cost;
