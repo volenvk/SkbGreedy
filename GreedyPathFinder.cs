@@ -6,29 +6,55 @@ using Greedy.Architecture.Drawing;
 
 namespace Greedy
 {
-	public class GreedyPathFinder : IPathFinder
-	{
-		private readonly DijkstraPathFinder finder = new DijkstraPathFinder();
-		
-		public List<Point> FindPathToCompleteGoal(State state)
-		{
-			var result = new List<Point>();
-			if(state.Chests.Count < 2) return result;
-			var points = new HashSet<Point>(state.Chests);
-			var last = state.Position;
-			while (points.Count > 0)
-			{
-				var paths = finder.GetPathsByDijkstra(state, last, points);
-				if(paths == null && !paths.Any()) return result;
-				var path = paths.OrderBy(x => x.Path.Count).First();
-				var steps = state.Energy - path.Cost;
-				if (steps <= 0) return result;
-				last = path.End;
-				points.Remove(last);
-				result.AddRange(path.Path.Skip(1));
-			}
-			
-			return result;
-		}
-	}
+    public class GreedyPathFinder : IPathFinder
+    {
+        private readonly DijkstraPathFinder finder = new DijkstraPathFinder();
+
+        public List<Point> FindPathToCompleteGoal(State state)
+        {
+            var result = new List<Point>();
+            var last = state.Position;
+            var energy = state.Energy;
+            var points = new HashSet<Point>(state.Chests);
+            while (points.Count > 0)
+            {
+                var path = GetMinTrack(GetPaths(state, last, points));
+                energy -= path.Cost;
+                if (energy < 0) break;
+                result.AddRange(path.Path.Skip(1));
+                last = path.End;
+                points.Remove(last);
+            }
+
+            return result;
+        }
+
+        private IEnumerable<PathWithCost> GetPaths(State state, Point start, IEnumerable<Point> cheats)
+        {
+            var points = new Queue<Point>(cheats);
+            while (points.Count > 0)
+            {
+                var point = points.Dequeue();
+                var path = finder.GetPathsByDijkstra(state, start, new []{point}).FirstOrDefault();
+                if (path == null) continue;
+                yield return path;
+            }
+        }
+
+
+        private static PathWithCost GetMinTrack(IEnumerable<PathWithCost> tracks)
+        {
+            if (tracks == null) return null;
+            PathWithCost result = null;
+            var min = int.MaxValue;
+            foreach (var track in tracks)
+            {
+                if (track.Cost >= min) continue;
+                result = track;
+                min = track.Cost;
+            }
+
+            return result;
+        }
+    }
 }
