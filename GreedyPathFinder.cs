@@ -12,49 +12,43 @@ namespace Greedy
 
         public List<Point> FindPathToCompleteGoal(State state)
         {
-            var result = new List<Point>();
+            var tree = new List<PathWithCost>();
             var last = state.Position;
             var energy = state.Energy;
             var points = new HashSet<Point>(state.Chests);
+            if (state.Goal > points.Count) return new List<Point>();
             while (points.Count > 0)
             {
-                var path = GetMinTrack(GetPaths(state, last, points));
-                energy -= path.Cost;
-                if (energy < 0) break;
-                result.AddRange(path.Path.Skip(1));
-                last = path.End;
-                points.Remove(last);
+                foreach (var edge in GetPaths(state, last, points).OrderBy(x=>x.Cost))
+                {
+                    energy -= edge.Cost;
+                    if (energy < 0) break;
+                    tree.Add(edge);
+                    if (HasCycle(tree))
+                        tree.Remove(edge);
+                    
+                    last = edge.End;
+                    points.Remove(last);
+                    break;
+                }
             }
+            
+            var result = new List<Point>();
+            foreach (var edge in tree)
+                result.AddRange(edge.Path.Skip(1));
 
             return result;
+        }
+
+        private static bool HasCycle(List<PathWithCost> edges)
+        {
+            return edges.All(x => edges.All(y => y.Path.SequenceEqual(x.Endpoints.Reverse())));
         }
 
         private IEnumerable<PathWithCost> GetPaths(State state, Point start, IEnumerable<Point> cheats)
         {
-            var points = new Queue<Point>(cheats);
-            while (points.Count > 0)
-            {
-                var point = points.Dequeue();
-                var path = finder.GetPathsByDijkstra(state, start, new []{point}).FirstOrDefault();
-                if (path == null) continue;
-                yield return path;
-            }
-        }
-
-
-        private static PathWithCost GetMinTrack(IEnumerable<PathWithCost> tracks)
-        {
-            if (tracks == null) return null;
-            PathWithCost result = null;
-            var min = int.MaxValue;
-            foreach (var track in tracks)
-            {
-                if (track.Cost >= min) continue;
-                result = track;
-                min = track.Cost;
-            }
-
-            return result;
+            return cheats.Select(cheat => finder.GetPathsByDijkstra(state, start, new []{cheat})
+                .First());
         }
     }
 }
