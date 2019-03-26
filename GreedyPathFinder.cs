@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using Greedy.Architecture;
@@ -12,57 +13,46 @@ namespace Greedy
 
         public List<Point> FindPathToCompleteGoal(State state)
         {
-            var tree = new List<PathWithCost>();
-            var last = state.Position;
             var energy = state.Energy;
             var points = new HashSet<Point>(state.Chests);
             if (state.Goal > points.Count) return new List<Point>();
-            while (points.Count > 0)
+            
+            var visit = new Stack<PathWithCost>(new []
             {
-                foreach (var edge in GetSortPaths(state, last, points))
+                new PathWithCost(0, state.Position)
+            });
+            var finished = new Dictionary<Point, PathWithCost>();
+            
+            while (visit.Count > 0)
+            {
+                var node = visit.Pop();
+                if (points.Remove(node.End) && finished.ContainsKey(node.Start)) 
+                    energy -= finished[node.Start].Cost;
+                
+                if (energy <= 0) break; 
+                
+                foreach (var next in GetSortPaths(state, node.End, points))
                 {
-                    energy -= edge.Cost;
-                    tree.Add(edge);
-                    if (HasCycle(tree))
-                    {
-                        tree.Remove(edge);
-                        continue;
-                    }
-                    
-                    last = edge.End;
-                    points.Remove(last);
-                    break;
+                    if (finished.ContainsKey(next.Start) 
+                        && next.Cost >= finished[next.Start].Cost) continue;
+                    visit.Push(next);
+                    if (energy - next.Cost < 0) continue;
+                    if (finished.ContainsKey(next.Start) 
+                        && next.Path.Count > finished[next.Start].Path.Count) continue;
+                    finished[next.Start] = next;
                 }
-                if (energy < 0) break;
             }
             
             var result = new List<Point>();
-            foreach (var edge in tree)
-                result.AddRange(edge.Path.Skip(1));
-
-            return result;
-        }
-
-        private static bool HasCycle(List<PathWithCost> edges)
-        {
-            var e = edges.GetEnumerator();
-            if (!e.MoveNext()) return false;
-            var last = e.Current;
-            var result = false;
-            while (e.MoveNext())
-            {
-                var prev = e.Current;
-                var items = prev.Path.Except(prev.Path);
-                result = items.Any();
-            }
+            foreach (var edge in finished)
+                result.AddRange(edge.Value.Path.Skip(1));
 
             return result;
         }
 
         private IEnumerable<PathWithCost> GetSortPaths(State state, Point start, IEnumerable<Point> cheats)
         {
-            return cheats.Select(cheat => finder.GetPathsByDijkstra(state, start, new []{cheat})
-                .First()).OrderBy(x=>x.Cost);
+            return cheats.Select(cheat => finder.GetPathsByDijkstra(state, start, new []{cheat}).First());
         }
     }
 }
