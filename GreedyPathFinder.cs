@@ -14,45 +14,44 @@ namespace Greedy
         public List<Point> FindPathToCompleteGoal(State state)
         {
             var energy = state.Energy;
+            var result = new List<Point>();
+            var tree = new HashSet<PathWithCost>();
             var points = new HashSet<Point>(state.Chests);
             if (state.Goal > points.Count) return new List<Point>();
+            if (points.Count < 2) return new List<Point>(state.Chests);
             
-            var visit = new Stack<PathWithCost>(new []
+            points.Add(state.Position);
+            foreach (var start in points)
             {
-                new PathWithCost(0, state.Position)
-            });
-            var finished = new Dictionary<Point, PathWithCost>();
-            
-            while (visit.Count > 0)
-            {
-                var node = visit.Pop();
-                if (points.Remove(node.End) && finished.ContainsKey(node.Start)) 
-                    energy -= finished[node.Start].Cost;
-                
-                if (energy <= 0) break; 
-                
-                foreach (var next in GetSortPaths(state, node.End, points))
+                foreach (var end in points)
                 {
-                    if (finished.ContainsKey(next.Start) 
-                        && next.Cost >= finished[next.Start].Cost) continue;
-                    visit.Push(next);
-                    if (energy - next.Cost < 0) continue;
-                    if (finished.ContainsKey(next.Start) 
-                        && next.Path.Count > finished[next.Start].Path.Count) continue;
-                    finished[next.Start] = next;
+                    if(start == end) continue;
+                    var edge = GetNode(state, start, end);
+                    tree.Add(edge);
                 }
             }
+            var sort = tree.OrderBy(x => x.Cost);
+            var kraskalTree = new LinkedList<PathWithCost>();
+            kraskalTree.AddLast(sort.First(x => x.Start == state.Position));
+            points.Remove(kraskalTree.Last.Value.Start);
+            points.Remove(kraskalTree.Last.Value.End);
+            foreach (var edge in sort)
+            {
+                if (kraskalTree.First?.Value.Start == edge.End 
+                    || kraskalTree.Last?.Value.End != edge.Start) continue;
+                kraskalTree.AddLast(edge);
+                points.Remove(edge.End);
+                if (points.Count == 0) break;
+            }
             
-            var result = new List<Point>();
-            foreach (var edge in finished)
-                result.AddRange(edge.Value.Path.Skip(1));
-
+            foreach (var edge in kraskalTree)
+                result.AddRange(edge.Path.Skip(1));
             return result;
         }
 
-        private IEnumerable<PathWithCost> GetSortPaths(State state, Point start, IEnumerable<Point> cheats)
+        private PathWithCost GetNode(State state, Point start, Point end)
         {
-            return cheats.Select(cheat => finder.GetPathsByDijkstra(state, start, new []{cheat}).First());
+            return finder.GetPathsByDijkstra(state, start, new[] {end}).First();
         }
     }
 }
