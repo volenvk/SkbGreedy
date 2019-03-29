@@ -13,18 +13,26 @@ namespace Greedy
 
         public List<Point> FindPathToCompleteGoal(State state)
         {
-            if (state.Goal > state.Chests.Count) return new List<Point>();
+            Console.WriteLine($"new test {state.MazeName}");
             var result = new List<Point>();
             var cheats = new HashSet<Point>(state.Chests);
             var energy = state.Energy;
             var goal = state.Goal;
             var last = state.Position;
+            if (cheats.Contains(last))
+            {
+                cheats.Remove(last);
+                goal--;
+            }
+            if (goal > state.Chests.Count) return new List<Point>();
+            
             while (cheats.Count > 0)
             {
-                var node = cheats
-                    .Select(cheat => finder.GetPathsByDijkstra(state, last, new[] {cheat}).FirstOrDefault())
-                    .OrderBy(x => x?.Cost)
-                    .FirstOrDefault(x=> x?.Cost > 0);
+                Console.WriteLine("start search");
+                var node = finder.GetPathsByDijkstra(state, last, cheats)
+                        .OrderBy(x => x?.Cost)
+                        .FirstOrDefault();
+                Console.WriteLine(node);
                 if (node == null) break;
                 last = node.End;
                 energy -= node.Cost;
