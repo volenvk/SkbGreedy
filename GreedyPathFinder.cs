@@ -13,45 +13,29 @@ namespace Greedy
 
         public List<Point> FindPathToCompleteGoal(State state)
         {
-            var energy = state.Energy;
+            if (state.Goal > state.Chests.Count) return new List<Point>();
             var result = new List<Point>();
-            var tree = new HashSet<PathWithCost>();
-            var points = new HashSet<Point>(state.Chests);
-            if (state.Goal > points.Count) return new List<Point>();
-            if (points.Count < 2) return new List<Point>(state.Chests);
-            
-            points.Add(state.Position);
-            foreach (var start in points)
+            var cheats = new HashSet<Point>(state.Chests);
+            var energy = state.Energy;
+            var goal = state.Goal;
+            var last = state.Position;
+            while (cheats.Count > 0)
             {
-                foreach (var end in points)
-                {
-                    if(start == end) continue;
-                    var edge = GetNode(state, start, end);
-                    tree.Add(edge);
-                }
+                var node = cheats
+                    .Select(cheat => finder.GetPathsByDijkstra(state, last, new[] {cheat}).FirstOrDefault())
+                    .OrderBy(x => x?.Cost)
+                    .FirstOrDefault(x=> x?.Cost > 0);
+                if (node == null) break;
+                last = node.End;
+                energy -= node.Cost;
+                if (energy < 0) break;
+                cheats.Remove(last);
+                result.AddRange(node.Path.Skip(1));
+                goal--;
+                if (goal <= 0) break;
             }
-            var sort = tree.OrderBy(x => x.Cost);
-            var kraskalTree = new LinkedList<PathWithCost>();
-            kraskalTree.AddLast(sort.First(x => x.Start == state.Position));
-            points.Remove(kraskalTree.Last.Value.Start);
-            points.Remove(kraskalTree.Last.Value.End);
-            foreach (var edge in sort)
-            {
-                if (kraskalTree.First?.Value.Start == edge.End 
-                    || kraskalTree.Last?.Value.End != edge.Start) continue;
-                kraskalTree.AddLast(edge);
-                points.Remove(edge.End);
-                if (points.Count == 0) break;
-            }
-            
-            foreach (var edge in kraskalTree)
-                result.AddRange(edge.Path.Skip(1));
-            return result;
-        }
 
-        private PathWithCost GetNode(State state, Point start, Point end)
-        {
-            return finder.GetPathsByDijkstra(state, start, new[] {end}).First();
+            return result;
         }
     }
 }

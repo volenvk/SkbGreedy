@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="36029c3a-a1a0-4ef9-ba99-148df2e4fb0a" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Greedy" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GreedyPathFinder.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+              <folding>
+                <marker date="1553600463127" expanded="true" signature="6:150" ph="..." />
+                <marker date="1553600463127" expanded="true" signature="168:2069" ph="{...}" />
+                <marker date="1553600463127" expanded="true" signature="218:2067" ph="{...}" />
+                <marker date="1553600463127" expanded="true" signature="367:1825" ph="{...}" />
+                <marker date="1553600463127" expanded="true" signature="625:692" ph="{...}" />
+                <marker date="1553600463127" expanded="true" signature="809:1629" ph="{...}" />
+                <marker date="1553600463127" expanded="true" signature="1153:1615" ph="{...}" />
+                <marker date="1553600463127" expanded="true" signature="1934:2061" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Tests/TestsHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Architecture/PathWithCost.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Architecture/State.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Architecture/StateController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GreedyPathFinder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/DijkstraPathFinder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8EA872B-C6C3-4547-B28C-904F5E42F85A/79/63bc8745/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tests/DijkstraPathFinder_Should.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/065E47C4-4C6A-4F8D-9CA9-445EFE73C7F5/e1/8716a93e/AssertionException.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/065E47C4-4C6A-4F8D-9CA9-445EFE73C7F5/2b/5a109f7b/TestCaseAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tests/GreedyPathFinder_Should.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Tests/DijkstraPathFinder_Should.cs" />
+        <option value="$PROJECT_DIR$/DijkstraPathFinder.cs" />
+        <option value="$PROJECT_DIR$/GreedyPathFinder.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="205" />
+    <option name="y" value="60" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Greedy" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Greedy" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="states-for-students" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Greedy" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Tests" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../func-brainfuck" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="RiderDotCoverPageId" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/bin/Debug/Greedy.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Greedy.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.6" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="36029c3a-a1a0-4ef9-ba99-148df2e4fb0a" name="Default Changelist" comment="" />
+      <created>1552892057811</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552892057811</updated>
+      <workItem from="1552892064984" duration="77360000" />
+    </task>
+    <task id="LOCAL-00001" summary="three test not work">
+      <created>1552984848423</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1552984848424</updated>
+    </task>
+    <task id="LOCAL-00002" summary="it's work!">
+      <created>1552987065490</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1552987065490</updated>
+    </task>
+    <task id="LOCAL-00003" summary="it's one test pass">
+      <created>1553074839355</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1553074839355</updated>
+    </task>
+    <task id="LOCAL-00004" summary="it's right algorithm no test">
+      <created>1553502662753</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1553502662753</updated>
+    </task>
+    <task id="LOCAL-00005" summary="it's right algorithm ToDo">
+      <created>1553505563731</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1553505563731</updated>
+    </task>
+    <task id="LOCAL-00006" summary="it's right algorithm ToDo step 2">
+      <created>1553600476824</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1553600476824</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="77360000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info content_ui="combo" id="Project" order="2" weight="0.14884233" />
+      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
+      <window_info active="true" id="Unit Tests" order="4" visible="true" weight="0.1874311" />
+      <window_info id="Favorites" order="5" weight="0.3296582" />
+      <window_info active="true" anchor="bottom" id="SVN Repositories" weight="0.32917964" />
+      <window_info anchor="bottom" id="Build" order="0" weight="0.32917964" />
+      <window_info anchor="bottom" id="NuGet" order="1" />
+      <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49944875" weight="0.32917964" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5005513" side_tool="true" weight="0.32917964" />
+      <window_info anchor="bottom" id="Database Changes" order="6" />
+      <window_info anchor="bottom" id="Performance Profiler" order="7" />
+      <window_info anchor="bottom" id="Message" order="8" />
+      <window_info anchor="bottom" id="Find" order="9" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.031152649" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Errors In Solution" order="1" weight="0.3296582" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="3" weight="0.3296582" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="4" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
+      <window_info anchor="right" id="Debug" order="7" weight="0.1477398" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info content_ui="combo" id="Project" order="2" weight="0.14884233" />
+      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
+      <window_info id="Unit Tests" order="4" visible="true" weight="0.1874311" />
+      <window_info id="Favorites" order="5" weight="0.3296582" />
+      <window_info anchor="bottom" id="Build" order="0" />
+      <window_info anchor="bottom" id="NuGet" order="1" />
+      <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="6" />
+      <window_info anchor="bottom" id="Performance Profiler" order="7" />
+      <window_info anchor="bottom" id="Message" order="8" />
+      <window_info anchor="bottom" id="Find" order="9" />
+      <window_info anchor="bottom" id="Run" order="10" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.3997923" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="1" />
+      <window_info anchor="right" id="Errors In Solution" order="2" weight="0.3296582" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="4" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="5" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="6" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnitTestsCoverage.Settings">
+    <option name="coveragePercentColumnWidth" value="150" />
+    <option name="sortOrder" value="DESCENDING" />
+    <option name="sortedColumn" value="1" />
+    <option name="symbolColumnWidth" value="223" />
+    <coverage-tree-state>
+      <expand />
+      <select />
+    </coverage-tree-state>
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+    <MESSAGE value="three test not work" />
+    <MESSAGE value="it's work!" />
+    <MESSAGE value="it's one test pass" />
+    <MESSAGE value="it's right algorithm no test" />
+    <MESSAGE value="it's right algorithm ToDo" />
+    <MESSAGE value="it's right algorithm ToDo step 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="it's right algorithm ToDo step 2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="NUnit.Framework.AssertionException" displayValue="NUnit.Framework.AssertionException" />
+          <option name="timeStamp" value="9" />
+        </breakpoint>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Collections.Generic.KeyNotFoundException" displayValue="System.Collections.Generic.KeyNotFoundException" />
+          <option name="timeStamp" value="12" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GreedyPathFinder.cs</url>
+          <line>45</line>
+          <properties documentPath="$PROJECT_DIR$/GreedyPathFinder.cs" initialLine="45">
+            <startOffsets>
+              <option value="1655" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1686" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GreedyPathFinder.cs</url>
+          <line>37</line>
+          <properties documentPath="$PROJECT_DIR$/GreedyPathFinder.cs" initialLine="37">
+            <startOffsets>
+              <option value="1327" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1344" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/065E47C4-4C6A-4F8D-9CA9-445EFE73C7F5/e1/8716a93e/AssertionException.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="34" column="35" lean-forward="true" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Architecture/PathWithCost.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding>
+            <marker date="1552487691934" expanded="false" signature="6:74" ph="..." />
+            <marker date="1552487691934" expanded="true" signature="105:596" ph="{...}" />
+            <marker date="1552487691934" expanded="true" signature="134:594" ph="{...}" />
+            <marker date="1552487691934" expanded="true" signature="253:302" ph="{...}" />
+            <marker date="1552487691934" expanded="true" signature="474:591" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/DijkstraPathFinder_Should.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="259" column="39" lean-forward="true" selection-start-line="259" selection-start-column="39" selection-end-line="259" selection-end-column="39" />
+          <folding>
+            <marker date="1552986035547" expanded="false" signature="6:225" ph="..." />
+            <marker date="1552986035547" expanded="true" signature="249:6279" ph="{...}" />
+            <marker date="1552986035547" expanded="true" signature="312:6277" ph="{...}" />
+            <marker date="1552986035547" expanded="true" signature="409:480" ph="{...}" />
+            <marker date="1552986035547" expanded="true" signature="498:722" ph="/* Формат описания лабиринтов в тестах смотрите в файле states-for-students\Readme.md ... */" />
+            <marker date="1552986035547" expanded="true" signature="731:837" ph="[...]" />
+            <marker date="1552986035547" expanded="true" signature="847:953" ph="[...]" />
+            <marker date="1552986035547" expanded="true" signature="962:1062" ph="[...]" />
+            <marker date="1552986035547" expanded="true" signature="1071:1188" ph="[...]" />
+            <marker date="1552986035547" expanded="true" signature="1197:1325" ph="[...]" />
+            <marker date="1552986035547" expanded="true" signature="1334:1472" ph="[...]" />
+            <marker date="1552986035547" expanded="true" signature="1533:1792" ph="{...}" />
+            <marker date="1552986035547" expanded="true" signature="1802:1919" ph="[...]" />
+            <marker date="1552986035547" expanded="true" signature="1928:2022" ph="[...]" />
+            <marker date="1552986035547" expanded="true" signature="2031:2126" ph="[...]" />
+            <marker date="1552986035547" expanded="true" signature="2135:2230" ph="[...]" />
+            <marker date="1552986035547" expanded="true" signature="2239:2332" ph="[...]" />
+            <marker date="1552986035547" expanded="true" signature="2341:2450" ph="[...]" />
+            <marker date="1552986035547" expanded="true" signature="2459:2582" ph="[...]" />
+            <marker date="1552986035547" expanded="true" signature="2591:2742" ph="[...]" />
+            <marker date="1552986035547" expanded="true" signature="2751:3104" ph="[...]" />
+            <marker date="1552986035547" expanded="true" signature="3202:3273" ph="{...}" />
+            <marker date="1552986035547" expanded="true" signature="3810:4114" ph="{...}" />
+            <marker date="1552986035547" expanded="true" signature="4197:5429" ph="{...}" />
+            <marker date="1552986035547" expanded="true" signature="4675:5419" ph="{...}" />
+            <marker date="1552986035547" expanded="true" signature="5496:6271" ph="{...}" />
+            <marker date="1552986035547" expanded="true" signature="5834:6223" ph="{...}" />
+            <marker date="1552986035547" expanded="true" signature="5896:6182" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C8EA872B-C6C3-4547-B28C-904F5E42F85A/79/63bc8745/List`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="232" column="24" selection-start-line="232" selection-start-column="24" selection-end-line="232" selection-end-column="24" />
+          <folding>
+            <marker date="1552970400039" expanded="true" signature="0:300" ph="/* Decompiled with JetBrains decompiler ... */" />
+            <marker date="1552970400039" expanded="false" signature="308:422" ph="..." />
+            <marker date="1552970400039" expanded="true" signature="460:76418" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="465:831" ph="///   Представляет строго типизированный список объектов, доступных по индексу. ... " />
+            <marker date="1552970400039" expanded="true" signature="1118:76416" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="1351:1547" ph="///   Инициализирует новый экземпляр класса &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt;, который является  ... " />
+            <marker date="1552970400039" expanded="true" signature="1594:1647" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="1653:2100" ph="///   Инициализирует новый пустой экземпляр класса &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; с указанной ... " />
+            <marker date="1552970400039" expanded="true" signature="2159:2447" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="2453:3002" ph="///   Инициализирует новый экземпляр &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt;, который содержит элемент ... " />
+            <marker date="1552970400039" expanded="true" signature="3074:3710" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="3270:3547" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="3334:3399" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="3412:3539" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="3558:3704" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="3716:4440" ph="///   Возвращает или задает общее число элементов, которые может вместить внутренняя структура данных без изменен ... " />
+            <marker date="1552970400039" expanded="true" signature="4493:5151" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="4534:4585" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="4620:5145" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="4875:5079" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="5157:5444" ph="///   Получает число элементов, содержащихся в интерфейсе &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt;. ... " />
+            <marker date="1552970400039" expanded="true" signature="5494:5584" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="5535:5578" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="5641:5726" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="5682:5720" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="5791:5876" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="5832:5870" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="5932:6017" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="5973:6011" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="6083:6168" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="6124:6162" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="6230:6456" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="6271:6450" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="6462:7098" ph="///   Возвращает или задает элемент по указанному индексу. ... " />
+            <marker date="1552970400039" expanded="true" signature="7156:7576" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="7197:7353" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="7388:7570" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="7634:7779" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="7842:8289" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="7883:7936" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="7971:8283" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="8081:8136" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="8176:8275" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="8295:8644" ph="///   Добавляет объект в конец очереди &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt;. ... " />
+            <marker date="1552970400039" expanded="true" signature="8701:8865" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="8926:9237" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="9028:9072" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="9110:9202" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="9243:9915" ph="///   Добавляет элементы указанной коллекции в конец списка &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt;. ... " />
+            <marker date="1552970400039" expanded="true" signature="9996:10056" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="10062:10439" ph="///   Возвращает для текущей коллекции оболочку &lt;see cref=&quot;T:System.Collections.ObjectModel.ReadOnlyCollection`1&quot; ... " />
+            <marker date="1552970400039" expanded="true" signature="10514:10583" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="10589:12931" ph="///   Выполняет поиск элемента в диапазоне элементов отсортированного списка &lt;see cref=&quot;T:System.Collections.Gene ... " />
+            <marker date="1552970400039" expanded="true" signature="13041:13560" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="13566:14833" ph="///   Выполняет поиск элемента по всему отсортированному списку &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; / ... " />
+            <marker date="1552970400039" expanded="true" signature="14898:14984" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="14990:16702" ph="///   Выполняет поиск элемента по всему отсортированному списку &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; / ... " />
+            <marker date="1552970400039" expanded="true" signature="16790:16865" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="16871:16999" ph="///   Удаляет все элементы из коллекции &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt;. ... " />
+            <marker date="1552970400039" expanded="true" signature="17052:17210" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="17084:17181" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="17216:17803" ph="///   Определяет, входит ли элемент в коллекцию &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt;. ... " />
+            <marker date="1552970400039" expanded="true" signature="17865:18352" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="17904:18095" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="17969:18065" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="18224:18326" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="18419:18535" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="18541:19380" ph="///   Преобразует элементы текущего списка &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; в другой тип и возв ... " />
+            <marker date="1552970400039" expanded="true" signature="19458:19823" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="19829:20744" ph="///   Копирует весь список &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; в совместимый одномерный массив, на ... " />
+            <marker date="1552970400039" expanded="true" signature="20807:20848" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="20935:21333" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="21087:21178" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="21222:21327" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="21339:23383" ph="///   Копирует диапазон элементов из списка &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; в совместимый одно ... " />
+            <marker date="1552970400039" expanded="true" signature="23484:23700" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="23706:24998" ph="///   Копирует &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; целиком в совместимый одномерный массив, начина ... " />
+            <marker date="1552970400039" expanded="true" signature="25077:25170" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="25212:25476" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="25482:26221" ph="///   Определяет, содержит ли &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; элементы, удовлетворяющие услови ... " />
+            <marker date="1552970400039" expanded="true" signature="26293:26347" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="26353:27100" ph="///   Выполняет поиск элемента, удовлетворяющего условиям указанного предиката, и возвращает первое найденное вхо ... " />
+            <marker date="1552970400039" expanded="true" signature="27167:27450" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="27326:27418" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="27456:28167" ph="///   Извлекает все элементы, удовлетворяющие условиям указанного предиката. ... " />
+            <marker date="1552970400039" expanded="true" signature="28243:28567" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="28441:28539" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="28573:29367" ph="///   Выполняет поиск элемента, удовлетворяющего условиям указанного предиката, и возвращает отсчитываемый от нул ... " />
+            <marker date="1552970400039" expanded="true" signature="29441:29504" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="29510:30689" ph="///   Выполняет поиск элемента, удовлетворяющего условиям указанного предиката, и возвращает отсчитываемый от нул ... " />
+            <marker date="1552970400039" expanded="true" signature="30779:30864" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="30870:32458" ph="///   Выполняет поиск элемента, удовлетворяющего условиям указанного предиката, и возвращает отсчитываемый от нул ... " />
+            <marker date="1552970400039" expanded="true" signature="32559:33214" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="33112:33191" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="33220:33973" ph="///   Выполняет поиск элемента, удовлетворяющего условиям указанного предиката, и возвращает последнее найденное  ... " />
+            <marker date="1552970400039" expanded="true" signature="34044:34332" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="34208:34300" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="34338:35138" ph="///   Выполняет поиск элемента, удовлетворяющего условиям указанного предиката, и возвращает отсчитываемый от нул ... " />
+            <marker date="1552970400039" expanded="true" signature="35216:35296" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="35302:36518" ph="///   Выполняет поиск элемента, удовлетворяющего условиям указанного предиката, и возвращает отсчитываемый от нул ... " />
+            <marker date="1552970400039" expanded="true" signature="36612:36692" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="36698:38327" ph="///   Выполняет поиск элемента, удовлетворяющего условиям указанного предиката, и возвращает отсчитываемый от нул ... " />
+            <marker date="1552970400039" expanded="true" signature="38432:39291" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="38563:38739" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="39189:39268" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="39297:39998" ph="///   Выполняет указанное действие с каждым элементом списка &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt;. ... " />
+            <marker date="1552970400039" expanded="true" signature="40069:40596" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="40602:40940" ph="///   Возвращает перечислитель, осуществляющий перебор элементов списка &lt;see cref=&quot;T:System.Collections.Generic.L ... " />
+            <marker date="1552970400039" expanded="true" signature="41015:41070" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="41150:41222" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="41296:41365" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="41371:42419" ph="///   Создает неполную копию диапазона элементов исходного списка &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; ... " />
+            <marker date="1552970400039" expanded="true" signature="42498:43113" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="43119:43812" ph="///   Осуществляет поиск указанного объекта и возвращает отсчитываемый от нуля индекс первого вхождения, найденно ... " />
+            <marker date="1552970400039" expanded="true" signature="43872:43949" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="44014:44126" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="44132:45317" ph="///   Осуществляет поиск указанного объекта и возвращает отсчитываемый от нуля индекс первого вхождения в диапазо ... " />
+            <marker date="1552970400039" expanded="true" signature="45388:45630" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="45636:47272" ph="///   Выполняет поиск указанного объекта и возвращает отсчитываемый от нуля индекс первого вхождения в диапазоне  ... " />
+            <marker date="1552970400039" expanded="true" signature="47354:47757" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="47763:48513" ph="///   Вставляет элемент в коллекцию &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; по указанному индексу. ... " />
+            <marker date="1552970400039" expanded="true" signature="48584:49063" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="49139:49431" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="49241:49295" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="49333:49425" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="49437:50542" ph="///   Вставляет элементы коллекции в список &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; в позиции с указан ... " />
+            <marker date="1552970400039" expanded="true" signature="50637:51859" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="51000:51728" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="51063:51720" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="51294:51513" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="51528:51679" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="51739:51830" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="51865:52553" ph="///   Осуществляет поиск указанного объекта и возвращает отсчитываемый от нуля индекс последнего вхождения, найде ... " />
+            <marker date="1552970400039" expanded="true" signature="52617:52740" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="52746:53910" ph="///   Осуществляет поиск указанного объекта и возвращает отсчитываемый от нуля индекс последнего вхождения в диап ... " />
+            <marker date="1552970400039" expanded="true" signature="53985:54206" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="54212:55820" ph="///   Выполняет поиск указанного объекта и возвращает отсчитываемый от нуля индекс последнего вхождения в диапазо ... " />
+            <marker date="1552970400039" expanded="true" signature="55906:56710" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="56716:57468" ph="///   Удаляет первое вхождение указанного объекта из коллекции &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; ... " />
+            <marker date="1552970400039" expanded="true" signature="57528:57668" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="57733:57835" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="57841:58393" ph="///   Удаляет все элементы, удовлетворяющие условиям указанного предиката. ... " />
+            <marker date="1552970400039" expanded="true" signature="58467:59163" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="58791:58983" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="59169:59748" ph="///   Удаляет элемент списка &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; с указанным индексом. ... " />
+            <marker date="1552970400039" expanded="true" signature="59813:60144" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="60150:60986" ph="///   Удаляет диапазон элементов из списка &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt;. ... " />
+            <marker date="1552970400039" expanded="true" signature="61065:61815" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="61821:61969" ph="///   Изменяет порядок элементов во всем списке &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; на обратный. ... " />
+            <marker date="1552970400039" expanded="true" signature="62024:62071" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="62077:62935" ph="///Изменяет порядок элементов в указанном диапазоне. ... " />
+            <marker date="1552970400039" expanded="true" signature="63010:63529" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="63535:64064" ph="///   Сортирует элементы во всем списке &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; с помощью функции срав ... " />
+            <marker date="1552970400039" expanded="true" signature="64116:64181" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="64187:65387" ph="///   Сортирует элементы во всем списке &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; с помощью указанной фу ... " />
+            <marker date="1552970400039" expanded="true" signature="65460:65514" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="65520:67349" ph="///   Сортирует элементы в диапазоне элементов списка &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; с помощь ... " />
+            <marker date="1552970400039" expanded="true" signature="67444:67965" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="67971:68745" ph="///   Сортирует элементы во всем списке &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; с использованием указа ... " />
+            <marker date="1552970400039" expanded="true" signature="68821:69085" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="69091:69366" ph="///   Копирует элементы списка &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; в новый массив. ... " />
+            <marker date="1552970400039" expanded="true" signature="69420:69570" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="69576:69774" ph="///   Задает емкость, равную фактическому числу элементов в списке &lt;see cref=&quot;T:System.Collections.Generic.List`1 ... " />
+            <marker date="1552970400039" expanded="true" signature="69832:69961" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="69967:70773" ph="///   Определяет, все ли элементы списка &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; удовлетворяют условия ... " />
+            <marker date="1552970400039" expanded="true" signature="70849:71113" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="71008:71088" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="71170:71242" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="71354:73345" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="71464:71559" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="71583:71696" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="71603:71688" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="71726:71833" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="71746:71825" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="71864:71938" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="71965:72037" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="72073:72159" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="72212:72302" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="72336:72420" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="72467:72568" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="72621:72727" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="72759:72972" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="72779:72865" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="72877:72964" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="73006:73091" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="73136:73220" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="73259:73339" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="73351:73488" ph="///   Выполняет перечисление элементов коллекции &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt;. ... " />
+            <marker date="1552970400039" expanded="true" signature="73608:76412" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="73760:73900" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="73908:74058" ph="///   Освобождает все ресурсы, занятые модулем &lt;see cref=&quot;T:System.Collections.Generic.List`1.Enumerator&quot; /&gt;. ... " />
+            <marker date="1552970400039" expanded="true" signature="74117:74133" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="74141:74678" ph="///   Перемещает перечислитель к следующему элементу коллекции &lt;see cref=&quot;T:System.Collections.Generic.List`1&quot; /&gt; ... " />
+            <marker date="1552970400039" expanded="true" signature="74738:75002" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="75037:75309" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="75317:75598" ph="///   Возвращает элемент, расположенный в текущей позиции перечислителя. ... " />
+            <marker date="1552970400039" expanded="true" signature="75652:75756" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="75697:75748" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="75821:76111" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="75866:76103" ph="{...}" />
+            <marker date="1552970400039" expanded="true" signature="76174:76406" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Architecture/StateController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="50" column="72" lean-forward="true" selection-start-line="50" selection-start-column="72" selection-end-line="50" selection-end-column="72" />
+          <folding>
+            <marker date="1552487695115" expanded="false" signature="6:88" ph="..." />
+            <marker date="1552487695115" expanded="true" signature="119:3153" ph="{...}" />
+            <marker date="1552487695115" expanded="true" signature="151:3151" ph="{...}" />
+            <marker date="1552487695115" expanded="true" signature="604:695" ph="{...}" />
+            <marker date="1552487695115" expanded="true" signature="735:889" ph="{...}" />
+            <marker date="1552487695115" expanded="true" signature="1105:1143" ph="{...}" />
+            <marker date="1552487695115" expanded="true" signature="1175:2403" ph="{...}" />
+            <marker date="1552487695115" expanded="true" signature="1236:1451" ph="{...}" />
+            <marker date="1552487695115" expanded="true" signature="1528:1611" ph="{...}" />
+            <marker date="1552487695115" expanded="true" signature="1714:1839" ph="{...}" />
+            <marker date="1552487695115" expanded="true" signature="1868:2047" ph="{...}" />
+            <marker date="1552487695115" expanded="true" signature="2208:2282" ph="{...}" />
+            <marker date="1552487695115" expanded="true" signature="2448:2600" ph="{...}" />
+            <marker date="1552487695115" expanded="true" signature="2492:2596" ph="{...}" />
+            <marker date="1552487695115" expanded="true" signature="2672:2779" ph="{...}" />
+            <marker date="1552487695115" expanded="true" signature="2829:2945" ph="{...}" />
+            <marker date="1552487695115" expanded="true" signature="2858:2924" ph="{...}" />
+            <marker date="1552487695115" expanded="true" signature="3006:3148" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Architecture/State.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6">
+          <caret line="50" column="40" lean-forward="true" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
+          <folding>
+            <marker date="1552487696563" expanded="false" signature="6:55" ph="..." />
+            <marker date="1552487696563" expanded="true" signature="86:1569" ph="{...}" />
+            <marker date="1552487696563" expanded="true" signature="108:1567" ph="{...}" />
+            <marker date="1552487696563" expanded="true" signature="258:466" ph="/// Количество сундуков, которые нужно собрать. ... " />
+            <marker date="1552487696563" expanded="true" signature="820:1003" ph="{...}" />
+            <marker date="1552487696563" expanded="true" signature="1137:1197" ph="{...}" />
+            <marker date="1552487696563" expanded="true" signature="1231:1271" ph="{...}" />
+            <marker date="1552487696563" expanded="true" signature="1309:1348" ph="{...}" />
+            <marker date="1552487696563" expanded="true" signature="1445:1514" ph="{...}" />
+            <marker date="1552487696563" expanded="true" signature="1542:1564" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/065E47C4-4C6A-4F8D-9CA9-445EFE73C7F5/2b/5a109f7b/TestCaseAttribute.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding>
+            <marker date="1553055389848" expanded="true" signature="0:287" ph="/* Decompiled with JetBrains decompiler ... */" />
+            <marker date="1553055389848" expanded="false" signature="295:496" ph="..." />
+            <marker date="1553055389848" expanded="true" signature="523:9814" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="715:9812" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="838:1019" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="1061:1217" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="1273:1436" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="1505:1674" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="1913:2091" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="1929:1982" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="1992:2085" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="2179:2378" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="2195:2279" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="2289:2372" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="2404:2593" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="2420:2499" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="2509:2587" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="2617:2811" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="2633:2678" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="2688:2805" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="2837:2970" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="2853:2903" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="2913:2964" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="2996:3182" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="3012:3079" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="3089:3176" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="3208:3393" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="3224:3301" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="3311:3387" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="3425:3588" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="3441:3485" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="3495:3582" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="3714:4022" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="3730:3811" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="3821:4016" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="4099:7398" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="4160:7259" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="4434:5894" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="4723:5884" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="4767:5210" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="4941:5196" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="5227:5872" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="5953:6815" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="6245:6754" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="6305:6381" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="6398:6742" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="7062:7125" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="7286:7359" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="7496:9098" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="7561:9092" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="7743:9084" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="7782:7850" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="7865:9074" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="8522:8877" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="9176:9808" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="9471:9771" ph="{...}" />
+            <marker date="1553055389848" expanded="true" signature="9609:9763" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/states-for-students/maze_no_energy.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/states-for-students/maze_no_chests.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/GreedyPathFinder_Should.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <folding>
+            <marker date="1531995037327" expanded="false" signature="6:102" ph="..." />
+            <marker date="1531995037327" expanded="true" signature="126:1039" ph="{...}" />
+            <marker date="1531995037327" expanded="true" signature="181:1037" ph="{...}" />
+            <marker date="1531995037327" expanded="true" signature="408:676" ph="{...}" />
+            <marker date="1531995037327" expanded="true" signature="803:1034" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/TestsHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          <folding>
+            <marker date="1552487695122" expanded="false" signature="6:117" ph="..." />
+            <marker date="1552487695122" expanded="true" signature="141:1182" ph="{...}" />
+            <marker date="1552487695122" expanded="true" signature="176:1180" ph="{...}" />
+            <marker date="1552487695122" expanded="true" signature="327:632" ph="{...}" />
+            <marker date="1552487695122" expanded="true" signature="750:904" ph="{...}" />
+            <marker date="1552487695122" expanded="true" signature="1015:1177" ph="{...}" />
+            <marker date="1552487695122" expanded="true" signature="1047:1091" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DijkstraPathFinder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="27" column="55" lean-forward="true" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="55" />
+          <folding>
+            <marker date="1552986991469" expanded="false" signature="6:164" ph="..." />
+            <marker date="1552986991469" expanded="true" signature="182:2147" ph="{...}" />
+            <marker date="1552986991469" expanded="true" signature="222:2145" ph="{...}" />
+            <marker date="1552986991469" expanded="true" signature="342:1624" ph="{...}" />
+            <marker date="1552986991469" expanded="true" signature="756:1614" ph="{...}" />
+            <marker date="1552986991469" expanded="true" signature="875:1456" ph="{...}" />
+            <marker date="1552986991469" expanded="true" signature="1687:2139" ph="{...}" />
+            <marker date="1552986991469" expanded="true" signature="1894:2129" ph="{...}" />
+            <marker date="1552986991469" expanded="true" signature="1988:2106" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GreedyPathFinder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+          <folding>
+            <marker date="1553600463127" expanded="true" signature="6:150" ph="..." />
+            <marker date="1553600463127" expanded="true" signature="168:2069" ph="{...}" />
+            <marker date="1553600463127" expanded="true" signature="218:2067" ph="{...}" />
+            <marker date="1553600463127" expanded="true" signature="367:1825" ph="{...}" />
+            <marker date="1553600463127" expanded="true" signature="625:692" ph="{...}" />
+            <marker date="1553600463127" expanded="true" signature="809:1629" ph="{...}" />
+            <marker date="1553600463127" expanded="true" signature="1153:1615" ph="{...}" />
+            <marker date="1553600463127" expanded="true" signature="1934:2061" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
